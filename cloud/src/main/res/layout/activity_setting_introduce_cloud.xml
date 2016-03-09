@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/setting_about_margin_horizal"
+    android:paddingRight="@dimen/setting_about_margin_horizal" >
+
+    <RelativeLayout
+        android:id="@+id/about_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_about_margin_bottom"
+        android:layout_marginTop="@dimen/setting_about_margin_top" >
+
+        <ImageView
+            android:id="@+id/im_personal_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/aboutview_logo" />
+
+        <TextView
+            android:id="@+id/tv_cloud_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/im_personal_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/setting_about_version_top"
+            android:text="@string/todo"
+            android:textColor="@color/font_hint_color"
+            android:textSize="@dimen/font_small_item"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/SettingKeyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_logo"
+        android:text="@string/introduce_cloud" />
+
+    <TextView
+        style="@style/SettingProviderStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/setting_about_provider_margin_bottom"
+        android:gravity="center_horizontal"
+        android:text="@string/setting_about_provider" />
+
+</RelativeLayout>

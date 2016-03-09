@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oxygen_measure_vlaue_high"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/measure_result_value_margin_right"
+            android:layout_weight="180"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_oxygen_saturation"
+                android:textSize="@dimen/font_oxygen_measure_text" />
+
+            <TextView
+                android:id="@+id/oxygen_measure_value_oxygenTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/oxygen_measure_value_margin_bottom"
+                android:layout_marginTop="@dimen/oxygen_measure_value_margin_top"
+                android:text="@string/no_value"
+                android:textColor="@color/font_history_high_priority_value"
+                android:textSize="@dimen/font_oxygen_measure_value"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="@dimen/two_tenth"
+                android:text="@string/blood_oxygen_unit"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_oxygen_measure_util" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/oxygen_measure_value_view_high"
+            android:layout_marginRight="@dimen/measure_result_value_margin_right"
+            android:layout_weight="2"
+            android:background="@drawable/dottedline" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/measure_result_value_margin_right"
+            android:layout_weight="180"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/heart_rate"
+                android:textSize="@dimen/font_oxygen_measure_text" />
+
+            <TextView
+                android:id="@+id/oxygen_measure_value_rateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/oxygen_measure_value_margin_bottom"
+                android:layout_marginTop="@dimen/oxygen_measure_value_margin_top"
+                android:text="@string/no_value"
+                android:textColor="@color/font_history_high_priority_value"
+                android:textSize="@dimen/font_oxygen_measure_value"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="@dimen/two_tenth"
+                android:text="@string/heart_rate_unit"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_oxygen_measure_util" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_bottom" />
+
+    <TextView
+        android:id="@+id/oxygen_measure_blankTV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oxygen_measure_blank_high"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oxygen_measure_line_chart_high"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <LinearLayout
+            android:id="@+id/pulse_wave_histogram"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <LinearLayout
+            android:id="@+id/oxwave_ly"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="620"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/oxygen_measure_complete"
+            android:layout_width="@dimen/pressure_connection_strat_width"
+            android:layout_height="@dimen/pressure_connection_strat_high"
+            android:background="@drawable/btn_connect_start_highlight"
+            android:text="@string/complete"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_connection_start_text" />
+    </LinearLayout>
+
+</LinearLayout>

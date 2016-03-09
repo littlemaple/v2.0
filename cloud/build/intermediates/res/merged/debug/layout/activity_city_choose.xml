@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/seting_tied_info_address_title_margin_top"
+        android:background="@color/bg_lightgrey" >
+
+        <Button
+            android:id="@+id/actionbar_left"
+            style="@style/SettingKeyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="@dimen/seting_tied_info_address_title_margin_horizal"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="cancleSelectCity"
+            android:text="@string/public_cancle"
+            android:textColor="@color/font_address_top_color" />
+
+        <Button
+            android:id="@+id/actionbar_right"
+            style="@style/SettingKeyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/seting_tied_info_address_title_margin_horizal"
+            android:background="@null"
+            android:clickable="true"
+            android:onClick="submitSelectCity"
+            android:text="@string/public_submit"
+            android:textColor="@color/font_address_top_color" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <com.medzone.cloud.ui.widget.wheelview.WheelView
+            android:id="@+id/id_province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.medzone.cloud.ui.widget.wheelview.WheelView>
+
+        <com.medzone.cloud.ui.widget.wheelview.WheelView
+            android:id="@+id/id_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.medzone.cloud.ui.widget.wheelview.WheelView>
+
+        <com.medzone.cloud.ui.widget.wheelview.WheelView
+            android:id="@+id/id_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+        </com.medzone.cloud.ui.widget.wheelview.WheelView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="@dimen/group_share_dialog_minheight"
+    android:paddingLeft="@dimen/group_invite_dialog_padding_horizontal"
+    android:paddingRight="@dimen/group_invite_dialog_padding_horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_chat_record_title_height" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/todo"
+            android:textColor="@color/font_record_share"
+            android:textSize="@dimen/font_group_chat_item_measuretype_size" />
+
+        <TextView
+            android:id="@+id/tv_measure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/todo"
+            android:textColor="@color/font_record_share"
+            android:textSize="@dimen/font_group_chat_measure_time_size" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_tie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@id/rl_header"
+        android:alpha="@dimen/two_tenth"
+        android:background="@color/divider_mid" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_tie"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_result_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_unit_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/share_month_or_recent_content_marginleft"
+                android:alpha="@dimen/eight_tenth"
+                android:text="@string/todo"
+                android:textColor="@color/font_record_share" />
+
+            <TextView
+                android:id="@+id/tv_value_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/share_month_or_recent_content_marginleft"
+                android:alpha="@dimen/eight_tenth"
+                android:text="@string/todo"
+                android:textColor="@color/font_record_share" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_result_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/group_chat_graph_tendency" />
+    </RelativeLayout>
+
+</RelativeLayout>

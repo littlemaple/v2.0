@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/home_history_record_margin_horizontal"
+    android:layout_marginRight="@dimen/home_history_record_margin_horizontal"
+    android:gravity="right"
+    android:minHeight="@dimen/group_chat_item_minheight"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_result_item_spacing"
+        android:alpha="0"
+        android:background="@color/divider_mid" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/home_monthly_report_item_height"
+        android:background="@drawable/myxinyunview_bg"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_result_item_top_height"
+            android:layout_marginLeft="@dimen/home_result_item_top_margin_horizal"
+            android:layout_marginRight="@dimen/home_result_item_top_margin_horizal" >
+
+            <TextView
+                android:id="@+id/tv_measure_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/todo"
+                android:textColor="@color/font_measuretype_atrovirens"
+                android:textSize="@dimen/home_font_size_mid" />
+
+            <TextView
+                android:id="@+id/tv_measure_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/todo"
+                android:textColor="@color/home_measuretime_color"
+                android:textSize="@dimen/home_font_size_small" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginLeft="@dimen/home_result_item_top_margin_horizal"
+            android:layout_marginRight="@dimen/home_result_item_top_margin_horizal"
+            android:alpha="@dimen/two_tenth"
+            android:background="@color/divider_mid" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/home_result_item_bottom_margin_horizal"
+            android:layout_marginRight="@dimen/home_result_item_bottom_margin_horizal"
+            android:baselineAligned="false"
+            android:gravity="center_vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/iv_result_icon"
+                    android:layout_width="@dimen/home_result_icon_size"
+                    android:layout_height="@dimen/home_result_icon_size"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_result_font_spacing_horizal"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/todo"
+                        android:textColor="@color/home_unit_cn_color"
+                        android:textSize="@dimen/home_font_size_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/todo"
+                        android:textColor="@color/home_measuredata_color"
+                        android:textSize="@dimen/home_font_size_large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/home_result_font_spacing_horizal"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/todo"
+                    android:textColor="@color/home_unit_en_color"
+                    android:textSize="@dimen/home_font_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

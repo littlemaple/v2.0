@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/measure_result_bottom_high"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_bottom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+         >
+
+        <LinearLayout
+            android:id="@+id/measure_bottom_againLL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:background="@drawable/select_linearlayout_finish"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/measure_result_bottom_margin_right"
+                android:scaleType="centerInside"
+                android:src="@drawable/testresultsview_ic_retest" />
+
+            <TextView
+                android:id="@+id/measure_bottom_againTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525f79"
+                android:textSize="@dimen/font_confirm_item" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/divider_bottom" />
+
+        <LinearLayout
+            android:id="@+id/measure_bottom_completeLL"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal" 
+            android:background="@drawable/select_linearlayout_finish"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/measure_result_bottom_margin_right"
+                android:scaleType="centerInside"
+                android:src="@drawable/testresultsview_ic_done" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_complete"
+                android:textColor="@color/font_measure_title_lightblue"
+                android:textSize="@dimen/font_confirm_item" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/equipment_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingTop="40dp" >
+
+    <ImageView
+        android:id="@+id/equipment_icon"
+        android:layout_width="@dimen/device_avatar_size"
+        android:layout_height="@dimen/device_avatar_size"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center" />
+
+</RelativeLayout>

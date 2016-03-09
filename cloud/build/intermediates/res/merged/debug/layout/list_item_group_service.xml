@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/group_fragment_item_height_padding"
+    android:minHeight="@dimen/group_fragment_item_height_padding"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_fragment_item_extra_height"
+        android:background="@color/group_member_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_fragment_item_height"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/group_fragment_item_height"
+            android:layout_marginLeft="@dimen/group_fragment_mygroup_margin_left"
+            android:layout_marginRight="@dimen/group_fragment_mygroup_margin_right"
+            android:gravity="center_vertical|right" >
+
+            <ImageView
+                android:id="@+id/group_top_imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/todo"
+                android:gravity="center_vertical"
+                android:src="@drawable/settingview_avatar_small" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/iv_new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/group_top_imageview"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/group_notifications_white"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/group_fragment_item_height" >
+
+            <TextView
+                android:id="@+id/group_top_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/group_name_paddingleft"
+                android:singleLine="true"
+                android:text="@string/todo"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/font_group_name_size" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/group_top_orientation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/group_state_icon_marginright"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_bottom" />
+
+</LinearLayout>

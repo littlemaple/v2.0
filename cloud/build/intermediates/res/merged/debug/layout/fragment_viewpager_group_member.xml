@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/gv_group_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:numColumns="4"
+        android:padding="@dimen/group_member_icon_margin"
+        android:smoothScrollbar="false" >
+    </GridView>
+
+    <View
+        android:id="@+id/hide_view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/gv_group_member"
+        android:background="@color/bg_five_alpha_dark"
+        android:visibility="invisible" />
+
+</RelativeLayout>

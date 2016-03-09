@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\pref_number_picker.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\layout\\pref_number_picker.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\number_picker.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\layout\\number_picker.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\dialog_number_picker.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\layout\\dialog_number_picker.xml"
+    }
+]

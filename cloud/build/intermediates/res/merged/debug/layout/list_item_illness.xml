@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_press_white_effect"
+    android:minHeight="@dimen/item_input_height"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_illness"
+        style="@style/SettingKeyStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/setting_edit_pregnant_margin_left"
+        android:layout_toLeftOf="@+id/cb_illness"
+        android:gravity="center_vertical"
+        android:text="@string/todo" />
+
+    <CheckBox
+        android:id="@+id/cb_illness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/service_clock_item_margin_right"
+        android:background="@drawable/selector_checkbox"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center_vertical" />
+
+</RelativeLayout>

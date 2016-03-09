@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pressure_connect_in_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pressure_connection_margin_top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pressure_connection_animation_high" >
+
+                <ImageView
+                    android:id="@+id/device_bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/guideview_pic_handandequipment" />
+
+                <FrameLayout
+                    android:id="@+id/pressure_open_device_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pressure_connection_circle_margin_left"
+                    android:layout_marginTop="@dimen/pressure_connection_circle_margin_top"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="@dimen/three_tenth"
+                        android:src="@drawable/guideview_pic_handandequipment_light_large" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="@dimen/eight_tenth"
+                        android:src="@drawable/guideview_pic_handandequipment_light_small" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/device_oximeter_hander"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/guideview_pic_hand_move" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/pressure_connect_textTV"
+                style="@style/SettingKeyStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pressure_connection_text_margin_top"
+                android:layout_marginTop="@dimen/pressure_connection_text_margin_bottom"
+                android:gravity="center_horizontal"
+                android:text="@string/measure_connect_open_device" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/pressure_connection_margin_left"
+                android:layout_marginRight="@dimen/pressure_connection_margin_right"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/guideview_ic_bluetooth" />
+
+                <ImageView
+                    android:id="@+id/pressure_connect_flag_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/guideview_connection_01" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/guideview_ic_bloodpressure" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pressure_connect_success_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pressure_connection_success_margin_top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:src="@drawable/guide_pic" />
+
+        <TextView
+            style="@style/SettingKeyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/pressure_connection_success_text_margin_bottom"
+            android:layout_marginTop="@dimen/pressure_connection_success_text_margin_top"
+            android:drawableLeft="@drawable/guide_ic_attention"
+            android:text="@string/please_keep_the_posture_measurement" />
+
+        <TextView
+            style="@style/SettingKeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/keep_the_heart_and_blood_pressure_terminal_the_same_height" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pressure_connect_start_btn"
+            android:layout_width="@dimen/pressure_connection_strat_width"
+            android:layout_height="@dimen/pressure_connection_strat_high"
+            android:background="@drawable/select_connect_start"
+            android:text="@string/start"
+            android:textColor="@drawable/selector_button_textcolor"
+            android:textSize="@dimen/font_connection_start_text" 
+            android:enabled="false"
+            />
+    </LinearLayout>
+
+</LinearLayout>

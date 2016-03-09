@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_clock_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_press_white_effect"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/service_clock_item_margin_horizal"
+    android:paddingRight="@dimen/service_clock_item_margin_horizal"
+    android:textColor="@color/font_input_dark" >
+
+    <LinearLayout
+        android:id="@+id/linear_alarm_edit"
+        android:layout_width="@dimen/service_clock_inner_item_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/service_clock_inner_item_margin_vertical"
+        android:layout_marginTop="@dimen/service_clock_inner_item_margin_vertical"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_clock_time"
+            style="@style/ClockTimeStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/service_clock_inner_item_margin_vertical"
+            android:singleLine="true"
+            android:text="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_clock_remark"
+            style="@style/ClockDescriptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/service_clock_inner_item_margin_vertical"
+            android:singleLine="true"
+            android:text="@string/todo" />
+
+        <TextView
+            android:id="@+id/tv_clock_repeation"
+            style="@style/ClockDescriptionStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/service_clock_inner_item_margin_vertical"
+            android:singleLine="true"
+            android:text="@string/todo" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dip"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:id="@+id/cb_new_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_switch"
+        android:button="@null"
+        android:contentDescription="@string/todo"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerInside" />
+ <Button
+        android:id="@+id/btn_delete_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        android:focusable="false"
+        android:text="删除"
+        android:visibility="gone"
+        android:background="@color/font_history_low_priority_value"
+        android:focusableInTouchMode="false"
+        android:scaleType="centerInside" />
+</LinearLayout>

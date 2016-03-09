@@ -1,0 +1,540 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medzone.mcloud"
+    android:versionCode="54"
+    android:versionName="2.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <!-- jpush permission -->
+    <permission
+        android:name="com.medzone.mcloud.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.medzone.mcloud.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Optional for location -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <!-- bluetooth -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- audio -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="READ_PHONE_STATE" />
+    <!-- lock -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- file -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.medzone.mcloud" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:requiresSmallestWidthDp="320"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="com.medzone.cloud.CloudApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Sherlock.Light" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.medzone.cloud.ui.GlobalDialogActivity"
+            android:configChanges="fontScale"
+            android:theme="@style/DialogActivityStyle" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SplashScreenActivity"
+            android:configChanges="fontScale"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupCreateActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupCreateSuccessActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupNotifyActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupChatActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupNotifyProcessActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupDatumActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.WelcomeActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.MeasureActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.MeasureDataActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.MainTabsActivity"
+            android:configChanges="fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.HealthCentreWebViewActivity"
+            android:noHistory="true"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.CentreDetectionActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyle" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.LoginActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.LoginAndRegiserActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.ForgetPwdActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.ResetPwdActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.RegisterPersonInfoActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.RegisterActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.RegisterDeviceActivity"
+            android:configChanges="fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupInviteActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupMemberActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupPersonDetailActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupServiceForMemberDetailActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupServiceForOwnerDetailActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingAboutActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingInfoTiedActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingUpdateInfoTiedActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingPersonalInfoActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Sherlock.Light"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingPrivacyActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingManagerDeviceActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingMeasureActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingChangeNickNameActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingChangeAddressActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingChangePasswordActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingMeasurePermissionActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingViewPermissionActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingChangePregnantActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingChangeBodyStateActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingAboutAgreemenActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingFeedBackActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingIntroduceActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.ShareActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.GroupResourceActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.clock.AlarmListActivity"
+            android:configChanges="fontScale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.clock.AlarmEditActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.clock.RepeatChooserActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.clock.AlarmTagActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.clock.SnoozeActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/CloudDialog" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.clock.TransitActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.medzone.cloud.ui.SettingSelectCityActivity"
+            android:configChanges="fontScale"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogActivityStyle" >
+        </activity>
+
+        <receiver android:name="com.medzone.cloud.clock.BootReciever" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.medzone.cloud.clock.AlarmReceiver" >
+        </receiver>
+
+        <service android:name="com.medzone.cloud.clock.AlarmService" >
+        </service>
+        <service android:name="com.medzone.cloud.acl.service.AudioClientService" >
+        </service>
+        <service android:name="com.medzone.cloud.acl.service.BluetoothClientService" >
+        </service>
+        <service
+            android:name="com.medzone.common.media.service.MediaPlayerService"
+            android:exported="true"
+            android:process=":MediaPlayerService" >
+            <intent-filter>
+                <action android:name="com.medzone.common.media.service" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.medzone.cloud.defender.DefenderService"
+            android:exported="true"
+            android:process=":DefenderService" >
+            <intent-filter>
+                <action android:name="com.medzone.cloud.defender" />
+            </intent-filter>
+        </service>
+
+        <!-- Umeng start -->
+        <!-- auto update -->
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <!-- feedback -->
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="523181b756240b552c096530" >
+        </meta-data>
+        <!-- Umeng end -->
+        <!-- baidu location sdk -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Nsz1TMj5ZBYk1cemxwGS2mp9" />
+
+        <!-- Jpush key -->
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.medzone.mcloud" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:permission="com.medzone.mcloud.permission.JPUSH_MESSAGE" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.medzone.mcloud" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        <receiver
+            android:name="com.medzone.cloud.defender.JPushReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.medzone.mcloud" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.medzone.cloud.receiver.CloudCentreRootReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.medzone.cloud.defender.action_registration_id" />
+                <action android:name="com.medzone.cloud.defender.action_checkupdate" />
+                <action android:name="com.medzone.cloud.defender.action_net_connected" />
+                <action android:name="com.medzone.cloud.defender.action_net_disconnected" />
+                <action android:name="com.medzone.cloud.defender.action_push_login_invalid" />
+                <action android:name="com.medzone.cloud.defender.action_push_group_post_message" />
+                <action android:name="com.medzone.cloud.defender.action_push_group_add" />
+                <action android:name="com.medzone.cloud.defender.action_push_group_kicked" />
+                <action android:name="com.medzone.cloud.defender.action_push_group_quited" />
+                <action android:name="com.medzone.cloud.defender.action_push_group_dismiss" />
+                <action android:name="com.medzone.cloud.defender.action_push_group_feedback" />
+                <action android:name="com.medzone.cloud.defender.action_push_connection_change" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="a49c4a591d861ba123fd252c" />
+    </application>
+
+</manifest>

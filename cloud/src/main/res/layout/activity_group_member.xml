@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/group_member_item_height"
+            android:background="@color/bg_lightgrey"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.medzone.cloud.ui.widget.CleanableEditText
+                android:id="@+id/ce_search_member"
+                style="@style/RegisterNormalEditDrawable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/group_member_search_margin_vertical"
+                android:layout_marginLeft="@dimen/item_margin_horizontal"
+                android:layout_marginRight="@dimen/item_margin_horizontal"
+                android:paddingLeft="@dimen/group_member_search_margin_vertical"
+                android:layout_marginTop="@dimen/group_member_search_margin_vertical"
+                android:drawableRight="@drawable/common_ic_cancle"
+                android:gravity="left|center_vertical"
+                android:imeOptions="actionGo"
+                android:singleLine="true"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/tv_search_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:drawableLeft="@drawable/securityprivacyview_ic_find"
+                android:drawablePadding="@dimen/group_member_icon_margin"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:textSize="@dimen/font_normal_item"
+                android:textColor="@color/font_hint_color"
+                android:text="@string/action_search" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/lv_groupmember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_input"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <com.medzone.framework.view.LetterSeekBar
+        android:id="@+id/letter_sort_right"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_letter_tag"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_gravity="center"
+        android:background="#55FFFFFF"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+</FrameLayout>

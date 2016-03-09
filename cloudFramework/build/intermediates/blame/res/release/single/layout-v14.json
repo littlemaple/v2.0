@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\layout-v14\\sherlock_spinner_item.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\layout-v14\\sherlock_spinner_item.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\layout-v14\\sherlock_spinner_dropdown_item.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\layout-v14\\sherlock_spinner_dropdown_item.xml"
+    }
+]

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/audio_connection_in_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_connect_margin_top"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_connect_animation_high" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/device_etm" />
+
+            <FrameLayout
+                android:id="@+id/audio_open_device_fl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/et_connect_round_margin_left"
+                android:layout_marginTop="@dimen/et_connect_round_margin_top"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="@dimen/eight_tenth"
+                    android:src="@drawable/device_etm_circle_in" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="@dimen/three_tenth"
+                    android:src="@drawable/device_etm_circle_out" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/device_oximeter_hand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/guideview_pic_hand_move" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/audio_connect_textTV"
+            style="@style/SettingKeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/et_connect_flag_text_margin_botom"
+            android:layout_marginTop="@dimen/et_connect_flag_text_margin_top"
+            android:gravity="center_horizontal"
+            android:text="@string/measure_connect_open_device" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/pressure_connection_margin_left"
+            android:layout_marginRight="@dimen/pressure_connection_margin_right"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/guideview_ic_bluetooth" />
+
+            <ImageView
+                android:id="@+id/audio_connect_flag_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/guideview_connection_01" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/et_connection_icon_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_connect_success_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pressure_connection_success_margin_top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_connect_success_animation_high" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/audio_connect_success_head" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/et_connect_hander_margin_left"
+                android:src="@drawable/audio_connect_success_hand" />
+        </FrameLayout>
+
+        <TextView
+            style="@style/SettingKeyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/pressure_connection_success_text_margin_bottom"
+            android:layout_marginTop="@dimen/pressure_connection_success_text_margin_top"
+            android:text="@string/the_ear_thermometer_in_the_ear" />
+
+        <TextView
+            style="@style/SettingKeyStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/let_the_ear_thermometer_and_the_eardrum_good_contact" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/audio_connect_startBtn"
+            android:layout_width="@dimen/pressure_connection_strat_width"
+            android:layout_height="@dimen/pressure_connection_strat_high"
+            android:background="@drawable/guideview_btn_start_disabled"
+            android:text="@string/start"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_connection_start_text" />
+    </LinearLayout>
+
+</LinearLayout>

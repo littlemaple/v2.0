@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_up_disabled.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_up_disabled.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_down_disabled.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_down_disabled.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\drop_down_list_arrow.png",
+        "source": "D:\\app\\cloudFramework\\src\\main\\res\\drawable-ldpi\\drop_down_list_arrow.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_up_disabled_focused.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_up_disabled_focused.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_input_selected.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_input_selected.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_down_selected.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_down_selected.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_input_pressed.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_input_pressed.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_input_disabled.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_input_disabled.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_down_normal.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_down_normal.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_input_normal.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_input_normal.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_down_pressed.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_down_pressed.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_down_disabled_focused.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_down_disabled_focused.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_up_normal.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_up_normal.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_up_selected.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_up_selected.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\numberpicker_up_pressed.9.png",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable-ldpi-v4\\numberpicker_up_pressed.9.png"
+    }
+]

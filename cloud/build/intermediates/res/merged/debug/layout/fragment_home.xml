@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginview_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/person_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/setting_top_item_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.medzone.framework.view.RoundedImageView
+            android:id="@+id/im_personal_icon"
+            android:layout_width="@dimen/setting_avator_width"
+            android:layout_height="@dimen/setting_avator_height"
+            android:layout_marginLeft="@dimen/setting_avator_margin_left"
+            android:layout_marginRight="@dimen/setting_avator_margin_right"
+            android:src="@drawable/settingview_avatar"
+            app:border_color="@android:color/white"
+            app:border_width="@dimen/home_avatar_stroken_width"
+            app:oval="true" />
+
+        <TextView
+            android:id="@+id/tv_personal_name"
+            style="@style/SettingNameStype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/home_name_marginleft"
+            android:text="@string/todo"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/home_name_textsize" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_monthly_report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_monthly_repory_layout_height"
+        android:layout_marginBottom="@dimen/home_monthly_report_layout_marginbottom"
+        android:orientation="horizontal"
+        android:visibility="gone" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_monthly_report_margin_left"
+            android:layout_marginRight="@dimen/home_monthly_report_margin_right"
+            android:alpha="@dimen/eight_tenth"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/home_monthly_report"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/home_monthly_report_title" />
+
+        <com.medzone.framework.view.HorizontalListView
+            android:id="@+id/hl_monthly_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical" >
+        </com.medzone.framework.view.HorizontalListView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:flipInterval="30"
+            android:paddingLeft="@dimen/home_history_record_margin_horizontal"
+            android:paddingRight="@dimen/home_history_record_margin_horizontal"
+            android:persistentDrawingCache="animation"
+            android:visibility="gone" >
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pagertitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" >
+            </android.support.v4.view.PagerTabStrip>
+        </android.support.v4.view.ViewPager>
+
+        <RelativeLayout
+            android:id="@+id/rl_place_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/home_placeholder_title_margintop"
+                android:text="@string/home_welcomes"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/home_placeholder_title_fontsize" />
+
+            <TextView
+                android:id="@+id/tv_ad_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/home_placeholder_ad2_margintop"
+                android:alpha="@dimen/four_tenth"
+                android:text="@string/home_welcomes_ad_link"
+                android:textColor="@android:color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/home_placeholder_ad_fontsize" />
+
+            <TextView
+                android:id="@+id/tv_ad_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ad_link"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/home_placeholder_ad2_margintop"
+                android:alpha="@dimen/four_tenth"
+                android:text="@string/home_welcomes_ad1"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/home_placeholder_ad_fontsize" />
+
+            <TextView
+                android:id="@+id/tv_ad_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ad_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/home_placeholder_ad2_margintop"
+                android:alpha="@dimen/four_tenth"
+                android:text="@string/home_welcomes_ad2"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/home_placeholder_ad_fontsize" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ad_2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/home_placeholder_logo_margintop"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/myxinyunview_fristtime_logo_mcloud" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

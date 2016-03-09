@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_place_holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/item_empryview_margintop"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home_placeholder_title_margintop"
+            android:text="@string/home_welcomes"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/home_placeholder_title_fontsize" />
+
+        <TextView
+            android:id="@+id/tv_ad_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home_placeholder_ad1_margintop"
+            android:alpha="@dimen/four_tenth"
+            android:text="@string/home_welcomes_ad3"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/home_placeholder_ad_fontsize" />
+
+        <TextView
+            android:id="@+id/tv_ad_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ad_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home_placeholder_ad2_margintop"
+            android:alpha="@dimen/four_tenth"
+            android:text="@string/home_welcomes_ad2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/home_placeholder_ad_fontsize"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ad_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/home_placeholder_logo_margintop"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/myxinyunview_fristtime_logo_mcloud" />
+    </RelativeLayout>
+
+</RelativeLayout>

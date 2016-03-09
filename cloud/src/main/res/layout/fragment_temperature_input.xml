@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/temperature_input_etTV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pressure_input_high"
+        android:layout_marginBottom="@dimen/pressure_input_margin_bottom"
+        android:layout_marginLeft="@dimen/pressure_input_margin_left"
+        android:layout_marginRight="@dimen/pressure_input_margin_right"
+        android:layout_marginTop="@dimen/pressure_input_margin_top"
+        android:background="@drawable/item_bg_blood"
+        android:gravity="center_vertical"
+        android:hint="@string/ear_temperature"
+        android:padding="@dimen/input_padding" />
+
+</LinearLayout>

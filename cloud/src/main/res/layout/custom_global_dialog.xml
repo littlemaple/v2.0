@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="@dimen/alarm_dialog_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_layout_oval"
+        android:minHeight="@dimen/alarm_dialog_height"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_dialog_margin"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/alarm_dialog_font_title_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginBottom="@dimen/alarm_dialog_margin"
+            android:layout_marginTop="@dimen/alarm_dialog_margin"
+            android:alpha="@dimen/two_tenth"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/alarm_dialog_margin"
+            android:gravity="center"
+            android:paddingBottom="@dimen/alarm_dialog_margin"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/alarm_dialog_font_content_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:alpha="@dimen/two_tenth"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/btn_close_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/selector_press_alpha_white_effect"
+            android:paddingBottom="@dimen/alarm_dialog_margin"
+            android:paddingTop="@dimen/alarm_dialog_margin"
+            android:text="@string/public_submit"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/alarm_dialog_font_content_size" />
+    </LinearLayout>
+
+</LinearLayout>

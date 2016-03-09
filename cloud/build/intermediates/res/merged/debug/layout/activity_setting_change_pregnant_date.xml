@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightgrey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setting_edit_pregnant_margin_top"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_top" />
+
+        <LinearLayout
+            android:id="@+id/linear_pregnant"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_input_height"
+            android:background="@drawable/selector_press_white_effect"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/SettingKeyStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/setting_edit_pregnant_margin_left"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:text="@string/pre_production_date" />
+
+            <TextView
+                android:id="@+id/tv_pregnant"
+                style="@style/SettingValueStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/settingview_arrow"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:id="@+id/childlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/selector_press_white_effect"
+    android:gravity="center_vertical|left"
+    android:minHeight="@dimen/group_fragment_item_height"
+    android:orientation="horizontal" >
+
+    <com.medzone.framework.view.RoundedImageView
+        android:id="@+id/image_child_avator"
+        android:layout_width="@dimen/group_icon_size"
+        android:layout_height="@dimen/group_icon_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/group_fragment_mygroup_member_margin_left"
+        android:layout_marginRight="@dimen/group_fragment_mygroup_member_margin_right"
+        android:src="@drawable/settingview_avatar_small"
+        app:oval="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_fragment_item_height"
+        android:layout_toRightOf="@id/image_child_avator"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/todo"
+                android:textSize="@dimen/group_child_item_textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/todo"
+                android:visibility="gone"
+                android:textColor="@color/font_record_share"
+                android:textSize="@dimen/font_caremember_events_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_alignLeft="@+id/ll"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_top" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+[
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_up_btn_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_up_btn_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__textfield_searchview_right_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__textfield_searchview_right_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__list_selector_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\loading_bg.9.png",
+        "source": "D:\\app\\cloudFramework\\src\\main\\res\\drawable\\loading_bg.9.png"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_down_btn.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_down_btn.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__textfield_searchview_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__textfield_searchview_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__ic_clear_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__ic_clear_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__activated_background_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__activated_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__activated_background_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__activated_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__list_selector_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__tab_indicator_ab_holo.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__tab_indicator_ab_holo.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_up_btn_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_up_btn_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__list_selector_background_transition_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__search_dropdown_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__search_dropdown_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__spinner_ab_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__spinner_ab_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__btn_cab_done_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__btn_cab_done_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_down_btn_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_down_btn_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__ic_clear.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__ic_clear.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__progress_medium_holo.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__progress_medium_holo.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__item_background_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__item_background_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__spinner_ab_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__spinner_ab_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__ic_menu_moreoverflow_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__ic_menu_moreoverflow_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_down_btn_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_down_btn_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__textfield_searchview_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__textfield_searchview_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_up_btn.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_up_btn.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__progress_horizontal_holo_light.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__progress_horizontal_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__progress_horizontal_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__progress_horizontal_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__btn_cab_done_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__btn_cab_done_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__textfield_searchview_right_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__textfield_searchview_right_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\numberpicker_input.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\drawable\\numberpicker_input.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__search_dropdown_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__search_dropdown_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\drawable\\abs__ic_menu_moreoverflow_holo_dark.xml",
+        "source": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\drawable\\abs__ic_menu_moreoverflow_holo_dark.xml"
+    }
+]

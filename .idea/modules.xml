@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app.iml" filepath="$PROJECT_DIR$/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud/cloud.iml" filepath="$PROJECT_DIR$/cloud/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudCommon/cloudCommon.iml" filepath="$PROJECT_DIR$/cloudCommon/cloudCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudFramework/cloudFramework.iml" filepath="$PROJECT_DIR$/cloudFramework/cloudFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloudNumberPickerBackPort/cloudNumberPickerBackPort.iml" filepath="$PROJECT_DIR$/cloudNumberPickerBackPort/cloudNumberPickerBackPort.iml" />
+    </modules>
+  </component>
+</project>

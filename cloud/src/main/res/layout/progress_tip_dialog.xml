@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="@dimen/six_tenth"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/error_dialog_margin_horizal"
+        android:layout_marginRight="@dimen/error_dialog_margin_horizal"
+        android:background="@drawable/shape_layout_dialog_bg"
+        android:gravity="center"
+        android:minHeight="@dimen/tip_dialog_height"
+        android:minWidth="@dimen/tip_dialog_width"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/leftDrawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/tip_dialog_icon_right"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:maxWidth="@dimen/tip_dialog_width"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/tip_dialog_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="reference" name="numberPickerDownButtonStyle"/>
+    <attr format="reference" name="numberPickerInputTextStyle"/>
+    <attr format="reference" name="numberPickerStyle"/>
+    <attr format="reference" name="numberPickerUpButtonStyle"/>
+    <declare-styleable name="numberpicker"><attr format="integer" name="startRange"/><attr format="integer" name="endRange"/><attr format="integer" name="step"/><attr format="integer" name="defaultValue"/><attr format="integer" name="maxValue"/><attr format="boolean" name="wrap"/></declare-styleable>
+    <style name="NumberPickerDownButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/numberpicker_down_btn</item>
+        <item name="android:paddingTop">22dip</item>
+        <item name="android:paddingBottom">22dip</item>
+    </style>
+    <style name="NumberPickerInputText" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textAppearance">@style/NumberPickerInputText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/numberpicker_input</item>
+    </style>
+    <style name="NumberPickerUpButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/numberpicker_up_btn</item>
+        <item name="android:paddingTop">22dip</item>
+        <item name="android:paddingBottom">22dip</item>
+    </style>
+</resources>

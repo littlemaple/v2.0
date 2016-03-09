@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightgrey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/setting_measure_all_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:textColor="@color/font_input_dark" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_input_height"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/setting_about_margin_left"
+            android:paddingRight="@dimen/setting_about_margin_left"
+            android:textColor="@color/font_input_dark" >
+
+            <TextView
+                style="@style/SettingKeyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/play_voice" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/divider_height"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/cb_setting_measure_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_switch"
+                android:button="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setting_measure_oxygen_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_input_height"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/setting_about_margin_left"
+            android:paddingRight="@dimen/setting_about_margin_left"
+            android:textColor="@color/font_input_dark"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SettingKeyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_oxygen_alert" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/divider_height"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/cb_setting_measure_oxygen_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_switch"
+                android:button="@null" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:alpha="@dimen/two_tenth"
+            android:background="@color/divider_mid" />
+
+        <LinearLayout
+            android:id="@+id/setting_measure_pressure_ll"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_input_height"
+            android:background="@drawable/selector_press_white_effect"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/setting_about_margin_left"
+            android:paddingRight="@dimen/setting_about_margin_left"
+            android:textColor="@color/font_input_dark"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/SettingKeyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_pressure_unit" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/divider_height"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_setting_measure_pressure_unitTV"
+                style="@style/SettingKeyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/setting_drawable_padding"
+                android:drawableRight="@drawable/settingview_arrow"
+                android:gravity="center_vertical"
+                android:text="@string/mmHg" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

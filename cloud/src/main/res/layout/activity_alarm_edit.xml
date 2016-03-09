@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/service_clock_time_pick_padding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePicker"
+        android:layout_marginTop="@dimen/service_clock_edit_item_margin_top"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:textColor="@color/font_input_dark" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_top" />
+
+        <LinearLayout
+            android:id="@+id/ll_clock_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_press_white_effect"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/font_input_dark" >
+
+            <Button
+                style="@style/ClockNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_input_height"
+                android:layout_marginLeft="@dimen/service_clock_edit_margin_left"
+                android:layout_marginRight="@dimen/service_clock_edit_margin_right"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:text="@string/clock_mode" />
+
+            <TextView
+                android:id="@+id/tv_clock_repeat"
+                style="@style/ClockHintStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_input_height"
+                android:layout_marginRight="@dimen/service_clock_edit_margin_right"
+                android:drawableRight="@drawable/settingview_arrow"
+                android:gravity="center_vertical|right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:alpha="@dimen/two_tenth"
+            android:background="@color/divider_mid" />
+
+        <LinearLayout
+            android:id="@+id/ll_clock_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_press_white_effect"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:textColor="@color/font_input_dark" >
+
+            <Button
+                style="@style/ClockNormalStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/item_input_height"
+                android:layout_marginLeft="@dimen/service_clock_edit_margin_left"
+                android:layout_marginRight="@dimen/service_clock_edit_margin_right"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:text="@string/clock_note" />
+
+            <TextView
+                android:id="@+id/tv_clock_label"
+                style="@style/ClockHintStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_input_height"
+                android:layout_marginRight="@dimen/service_clock_edit_margin_right"
+                android:drawableRight="@drawable/settingview_arrow"
+                android:gravity="center_vertical|right"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_bottom" />
+    </LinearLayout>
+
+</RelativeLayout>

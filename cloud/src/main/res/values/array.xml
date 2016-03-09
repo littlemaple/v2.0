@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="avatar_setting_values">
+        <item>拍照</item>
+        <item>从相册中选择</item>
+    </string-array>
+    <string-array name="gender_setting_values">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="illness_key_setting_values">
+        <item>糖尿病</item>
+        <item>心血管疾病（冠心病/心肌梗塞等）</item>
+        <item>高血脂</item>
+        <item>脑血管疾病（脑中风/脑眩晕等）</item>
+        <item>呼吸系统疾病</item>
+        <item>高血压</item>
+        <item>感冒</item>
+        <item>肺炎</item>
+        <item>恶性肿瘤</item>
+        <item>风湿类疾病</item>
+    </string-array>
+    <string-array name="illness_value_setting_values">
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+        <item>N</item>
+    </string-array>
+    <string-array name="every_week_list">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="week_list">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+</resources>

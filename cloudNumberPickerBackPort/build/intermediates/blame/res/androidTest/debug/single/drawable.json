@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_up_btn_holo_dark.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_up_btn_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_down_btn.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_down_btn.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_down_btn_holo_light.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_down_btn_holo_light.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_input.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_input.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_up_btn.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_up_btn.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_down_btn_holo_dark.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_down_btn_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\numberpicker_up_btn_holo_light.xml",
+        "source": "D:\\app\\cloudNumberPickerBackPort\\build\\intermediates\\bundles\\debug\\res\\drawable\\numberpicker_up_btn_holo_light.xml"
+    }
+]

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="boolean" name="centered"/>
+    <attr format="color" name="selectedColor"/>
+    <attr format="dimension" name="strokeWidth"/>
+    <attr format="color" name="unselectedColor"/>
+    <bool name="default_circle_indicator_centered">true</bool>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <color name="drop_down_list_footer_font_color">#000000</color>
+    <color name="drop_down_list_header_font_color">#000000</color>
+    <color name="drop_down_list_header_second_font_color">#000000</color>
+    <declare-styleable name="CirclePageIndicator"><attr name="centered"/><attr format="color" name="fillColor"/><attr format="color" name="pageColor"/><attr name="android:orientation"/><attr format="dimension" name="radius"/><attr format="boolean" name="snap"/><attr format="color" name="strokeColor"/><attr name="strokeWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="HorizontalListView"><attr format="dimension" name="dividerWidth"/><attr name="android:divider"/><attr name="android:requiresFadingEdge"/><attr name="android:fadingEdgeLength"/></declare-styleable>
+    <declare-styleable name="LinePageIndicator"><attr name="centered"/><attr name="unselectedColor"/><attr name="selectedColor"/><attr format="dimension" name="lineWidth"/><attr name="strokeWidth"/><attr format="dimension" name="gapWidth"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/><flag name="both" value="0x3"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/></declare-styleable>
+    <declare-styleable name="RoundedImageView"><attr format="dimension" name="corner_radius"/><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="mutate_background"/><attr format="color" name="force_background"/><attr format="boolean" name="oval"/><attr name="android:scaleType"/></declare-styleable>
+    <declare-styleable name="TitlePageIndicator"><attr format="dimension" name="clipPadding"/><attr format="color" name="footerColor"/><attr format="dimension" name="footerLineHeight"/><attr name="footerIndicatorStyle"><enum name="none" value="0"/><enum name="triangle" value="1"/><enum name="underline" value="2"/></attr><attr format="dimension" name="footerIndicatorHeight"/><attr format="dimension" name="footerIndicatorUnderlinePadding"/><attr format="dimension" name="footerPadding"/><attr name="linePosition"><enum name="bottom" value="0"/><enum name="top" value="1"/></attr><attr name="selectedColor"/><attr format="boolean" name="selectedBold"/><attr name="android:textColor"/><attr name="android:textSize"/><attr format="dimension" name="titlePadding"/><attr format="dimension" name="topPadding"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="UnderlinePageIndicator"><attr format="boolean" name="fades"/><attr format="integer" name="fadeDelay"/><attr format="integer" name="fadeLength"/><attr name="selectedColor"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="ViewPagerIndicator"><attr format="reference" name="vpiCirclePageIndicatorStyle"/><attr format="reference" name="vpiIconPageIndicatorStyle"/><attr format="reference" name="vpiLinePageIndicatorStyle"/><attr format="reference" name="vpiTitlePageIndicatorStyle"/><attr format="reference" name="vpiTabPageIndicatorStyle"/><attr format="reference" name="vpiUnderlinePageIndicatorStyle"/></declare-styleable>
+    <declare-styleable name="drop_down_list_attr"><attr format="boolean" name="isDropDownStyle"/><attr format="boolean" name="isOnBottomStyle"/><attr format="boolean" name="isAutoLoadOnBottom"/></declare-styleable>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <item name="about_content" type="id">false</item>
+    <item name="arrow" type="id">false</item>
+    <item name="atSomebody" type="id">false</item>
+    <item name="attention" type="id">false</item>
+    <item name="attentionfanslayout" type="id">false</item>
+    <item name="back" type="id">false</item>
+    <item name="btAddAccount" type="id">false</item>
+    <item name="btCancel" type="id">false</item>
+    <item name="btClose" type="id">false</item>
+    <item name="btCmtSend" type="id">false</item>
+    <item name="btFwdClose" type="id">false</item>
+    <item name="btFwdSend" type="id">false</item>
+    <item name="btGPS" type="id">false</item>
+    <item name="btGallery" type="id">false</item>
+    <item name="btIvBack" type="id">false</item>
+    <item name="btIvSave" type="id">false</item>
+    <item name="btMsgSend" type="id">false</item>
+    <item name="btOkay" type="id">false</item>
+    <item name="btRegister" type="id">false</item>
+    <item name="btSearch" type="id">false</item>
+    <item name="btSend" type="id">false</item>
+    <item name="btTopicHome" type="id">false</item>
+    <item name="btTopicReload" type="id">false</item>
+    <item name="btUIMyHome" type="id">false</item>
+    <item name="btUIReload" type="id">false</item>
+    <item name="btnOk" type="id">false</item>
+    <item name="btn_at" type="id">false</item>
+    <item name="btn_atten" type="id">false</item>
+    <item name="btn_message" type="id">false</item>
+    <item name="delete" type="id">false</item>
+    <item name="detail_popup_window" type="id">false</item>
+    <item name="edit_text" type="id">false</item>
+    <item name="etBlog" type="id">false</item>
+    <item name="etCmtReason" type="id">false</item>
+    <item name="etFileName" type="id">false</item>
+    <item name="etFwdReason" type="id">false</item>
+    <item name="etMsgReason" type="id">false</item>
+    <item name="etNickname" type="id">false</item>
+    <item name="etPassword" type="id">false</item>
+    <item name="etPasswordConfirm" type="id">false</item>
+    <item name="etSearch" type="id">false</item>
+    <item name="etUsername" type="id">false</item>
+    <item name="etUsrname" type="id">false</item>
+    <item name="first_btn_group" type="id">false</item>
+    <item name="greenbubble" type="id">false</item>
+    <item name="gridview" type="id"/>
+    <item name="imageContainer" type="id">false</item>
+    <item name="ivArrow" type="id">false</item>
+    <item name="ivCameraPic" type="id">false</item>
+    <item name="ivGpsIcon" type="id">false</item>
+    <item name="ivImage" type="id">false</item>
+    <item name="ivItemPic" type="id">false</item>
+    <item name="ivItemPicture" type="id">false</item>
+    <item name="ivItemPortrait" type="id">false</item>
+    <item name="ivItemV" type="id">false</item>
+    <item name="ivLeft" type="id">false</item>
+    <item name="ivNavigater" type="id">false</item>
+    <item name="ivPortrait" type="id">false</item>
+    <item name="ivRight" type="id">false</item>
+    <item name="ivWidgetLogo" type="id">false</item>
+    <item name="linear_layout_buttons" type="id">false</item>
+    <item name="linear_layout_top" type="id">false</item>
+    <item name="linear_layout_up" type="id">false</item>
+    <item name="linear_panel" type="id">false</item>
+    <item name="linear_progress" type="id">false</item>
+    <item name="logo_bg" type="id">false</item>
+    <item name="lvCmt" type="id">false</item>
+    <item name="lvLinks" type="id">false</item>
+    <item name="lvUser" type="id">false</item>
+    <item name="lyIvTitle" type="id">false</item>
+    <item name="lyRightLayout" type="id">false</item>
+    <item name="lyTitle" type="id">false</item>
+    <item name="lyTopicTitle" type="id">false</item>
+    <item name="lytSearch" type="id">false</item>
+    <item name="main_about" type="id">false</item>
+    <item name="main_bookmark" type="id">false</item>
+    <item name="main_contact" type="id">false</item>
+    <item name="main_feedback" type="id">false</item>
+    <item name="main_lookaround" type="id">false</item>
+    <item name="main_official" type="id">false</item>
+    <item name="main_radio" type="id">false</item>
+    <item name="main_recommend" type="id">false</item>
+    <item name="main_search" type="id">false</item>
+    <item name="main_settings" type="id">false</item>
+    <item name="main_switchuser" type="id">false</item>
+    <item name="mainlst" type="id">false</item>
+    <item name="mian_new" type="id">false</item>
+    <item name="notAttention" type="id">false</item>
+    <item name="pbProgress" type="id">false</item>
+    <item name="privateMessage" type="id">false</item>
+    <item name="progress_dialog" type="id">false</item>
+    <item name="progress_dialog_tv" type="id">false</item>
+    <item name="progress_location" type="id">false</item>
+    <item name="radio_group_bottom" type="id">false</item>
+    <item name="rbFemale" type="id">false</item>
+    <item name="rbMale" type="id">false</item>
+    <item name="rb_comment" type="id">false</item>
+    <item name="rb_forward" type="id">false</item>
+    <item name="rb_topic" type="id">false</item>
+    <item name="rb_user" type="id">false</item>
+    <item name="refresh" type="id">false</item>
+    <item name="relative_bottom" type="id">false</item>
+    <item name="return_" type="id">false</item>
+    <item name="rgSearch" type="id">false</item>
+    <item name="rgSex" type="id">false</item>
+    <item name="rlLeft" type="id">false</item>
+    <item name="rlRight" type="id">false</item>
+    <item name="rlTextDescBlock" type="id">false</item>
+    <item name="rlTotle" type="id">false</item>
+    <item name="rtGps" type="id">false</item>
+    <item name="search" type="id">false</item>
+    <item name="second_btn_group" type="id">false</item>
+    <item name="share" type="id">false</item>
+    <item name="src_text_block" type="id">false</item>
+    <item name="subLayout" type="id">false</item>
+    <item name="suffix" type="id">false</item>
+    <item name="tbUserIfo" type="id">false</item>
+    <item name="text_location" type="id">false</item>
+    <item name="text_view_panel_1" type="id">false</item>
+    <item name="text_view_panel_2" type="id">false</item>
+    <item name="third_btn_group" type="id">false</item>
+    <item name="topic_attention" type="id">false</item>
+    <item name="topic_back" type="id">false</item>
+    <item name="topic_comment" type="id">false</item>
+    <item name="topic_reload" type="id">false</item>
+    <item name="topic_remove" type="id">false</item>
+    <item name="topic_toolbar" type="id">false</item>
+    <item name="topic_toolbar_attend" type="id">false</item>
+    <item name="topic_toolbar_comment" type="id">false</item>
+    <item name="topic_toolbar_home" type="id">false</item>
+    <item name="topic_toolbar_reload" type="id">false</item>
+    <item name="tvCmtLabel" type="id">false</item>
+    <item name="tvCmtTitle" type="id">false</item>
+    <item name="tvComment" type="id">false</item>
+    <item name="tvDelete" type="id">false</item>
+    <item name="tvDestroy" type="id">false</item>
+    <item name="tvFav" type="id">false</item>
+    <item name="tvForward" type="id">false</item>
+    <item name="tvItemAttMeNum" type="id">false</item>
+    <item name="tvItemBlogNum" type="id">false</item>
+    <item name="tvItemCmtContent" type="id">false</item>
+    <item name="tvItemCmtDate" type="id">false</item>
+    <item name="tvItemCmtNickname" type="id">false</item>
+    <item name="tvItemContent" type="id">false</item>
+    <item name="tvItemDate" type="id">false</item>
+    <item name="tvItemMeAttNum" type="id">false</item>
+    <item name="tvItemName" type="id">false</item>
+    <item name="tvItemNickName" type="id">false</item>
+    <item name="tvItemNum" type="id">false</item>
+    <item name="tvItemProvince" type="id">false</item>
+    <item name="tvItemRtComment" type="id">false</item>
+    <item name="tvItemSex" type="id">false</item>
+    <item name="tvItemSubContent" type="id">false</item>
+    <item name="tvItemSummary" type="id">false</item>
+    <item name="tvIvText" type="id">false</item>
+    <item name="tvLabel" type="id">false</item>
+    <item name="tvLeft" type="id">false</item>
+    <item name="tvMessageBox" type="id">false</item>
+    <item name="tvMore" type="id">false</item>
+    <item name="tvMsgLabel" type="id">false</item>
+    <item name="tvNick" type="id">false</item>
+    <item name="tvPassword" type="id">false</item>
+    <item name="tvPasswordConfirm" type="id">false</item>
+    <item name="tvRefresh" type="id">false</item>
+    <item name="tvReport" type="id">false</item>
+    <item name="tvReturn" type="id">false</item>
+    <item name="tvRight" type="id">false</item>
+    <item name="tvShare" type="id">false</item>
+    <item name="tvText" type="id">false</item>
+    <item name="tvTopicItemName" type="id">false</item>
+    <item name="tvTopicName" type="id">false</item>
+    <item name="tvUINickName" type="id">false</item>
+    <item name="tvUsrname" type="id">false</item>
+    <item name="tweet_bottom_bar" type="id">false</item>
+    <item name="tweet_comment" type="id">false</item>
+    <item name="tweet_divider" type="id">false</item>
+    <item name="tweet_main_view" type="id">false</item>
+    <item name="tweet_message" type="id">false</item>
+    <item name="tweet_oriTxt" type="id">false</item>
+    <item name="tweet_profile" type="id">false</item>
+    <item name="tweet_profile_name" type="id">false</item>
+    <item name="tweet_profile_preview" type="id">false</item>
+    <item name="tweet_profile_vip" type="id">false</item>
+    <item name="tweet_redirect" type="id">false</item>
+    <item name="tweet_updated" type="id">false</item>
+    <item name="tweet_upload_pic" type="id">false</item>
+    <item name="tweet_upload_pic2" type="id">false</item>
+    <item name="tweet_via" type="id">false</item>
+    <item name="usrinfo_btns_grp" type="id">false</item>
+    <item name="usrinfo_detail_block" type="id">false</item>
+    <item name="vBelowDelete" type="id">false</item>
+    <item name="vCenter" type="id">false</item>
+    <item name="vDevider" type="id">false</item>
+    <item name="vHaveFav" type="id">false</item>
+    <item name="webview" type="id"/>
+    <item name="widget_block_content" type="id">false</item>
+    <item name="widget_block_loading" type="id">false</item>
+    <item name="widget_block_login" type="id">false</item>
+    <item name="widget_blog_content" type="id">false</item>
+    <item name="widget_blog_pic" type="id">false</item>
+    <item name="widget_blog_time" type="id">false</item>
+    <item name="widget_btn_down" type="id">false</item>
+    <item name="widget_btn_new_blog" type="id">false</item>
+    <item name="widget_btn_up" type="id">false</item>
+    <item name="widget_btns" type="id">false</item>
+    <item name="widget_line_left" type="id">false</item>
+    <item name="widget_line_right" type="id">false</item>
+    <item name="widget_message_text" type="id">false</item>
+    <item name="widget_progress_comp" type="id">false</item>
+    <item name="widget_progress_text" type="id">false</item>
+    <item name="widget_refresh_btn" type="id">false</item>
+    <item name="widget_relate_name" type="id">false</item>
+    <item name="widget_search_content" type="id">false</item>
+    <item name="widget_usr_image" type="id">false</item>
+    <item name="widget_usr_name" type="id">false</item>
+    <item name="widget_usr_v" type="id">false</item>
+    <item name="wvPage" type="id">false</item>
+    <item name="zcZooms" type="id">false</item>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <string name="action_cancel">取消</string>
+    <string name="action_confirm">确认</string>
+    <string name="drop_down_list_footer_default_text">更多</string>
+    <string name="drop_down_list_footer_loading_text">加载中…</string>
+    <string name="drop_down_list_footer_no_more_text">没有更多了</string>
+    <string name="drop_down_list_header_default_text">点击可以刷新</string>
+    <string name="drop_down_list_header_loading_text">加载中…</string>
+    <string name="drop_down_list_header_pull_text">下拉可以刷新</string>
+    <string name="drop_down_list_header_release_text">松开可以刷新</string>
+    <string name="first_update">第一次更新</string>
+    <string name="getting_data">正在加载…</string>
+    <string name="image_content">Image</string>
+    <string name="last_update_time">%s更新</string>
+    <string name="no_data_prompt">无数据可供加载,请稍候尝试！</string>
+    <string name="refresh_down_text">下拉刷新</string>
+    <string name="refresh_refreshing_text">正在刷新</string>
+    <string name="refresh_release_text">松开刷新</string>
+    <string name="todo">TODO</string>
+    <style name="CustomProgressDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="drop_down_list_footer_font_style">
+        <item name="android:textColor">@color/drop_down_list_footer_font_color</item>
+        <item name="android:textAppearance">@android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="drop_down_list_footer_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+    </style>
+    <style name="drop_down_list_header_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_font_color</item>
+        <item name="android:textAppearance">@android:attr/textAppearanceMedium</item>
+    </style>
+    <style name="drop_down_list_header_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+    </style>
+    <style name="drop_down_list_header_second_font_style">
+        <item name="android:textColor">@color/drop_down_list_header_second_font_color</item>
+        <item name="android:textAppearance">@android:attr/textAppearanceSmall</item>
+    </style>
+</resources>

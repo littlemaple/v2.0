@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="drop_down_list_header_default_text">点击可以刷新</string>
+    <string name="drop_down_list_header_pull_text">下拉可以刷新</string>
+    <string name="drop_down_list_header_release_text">松开可以刷新</string>
+    <string name="drop_down_list_header_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_default_text">更多</string>
+    <string name="drop_down_list_footer_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">没有更多了</string>
+    <string name="image_content">Image</string>
+    <string name="refresh_down_text">下拉刷新</string>
+    <string name="refresh_release_text">松开刷新</string>
+    <string name="refresh_refreshing_text">正在刷新</string>
+    <string name="last_update_time">%s更新</string>
+    <string name="no_data_prompt">无数据可供加载,请稍候尝试！</string>
+    <string name="getting_data">正在加载&#8230;</string>
+    <string name="first_update">第一次更新</string>
+    <string name="action_confirm">确认</string>
+    <string name="action_cancel">取消</string>
+    <string name="todo">TODO</string>
+
+</resources>

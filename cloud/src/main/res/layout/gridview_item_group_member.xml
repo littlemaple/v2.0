@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:id="@+id/container"
+    android:layout_width="@dimen/group_member_icon_height"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/group_member_icon_margin"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <com.medzone.framework.view.RoundedImageView
+        android:id="@+id/iv_icon_member"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_member_icon_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/settingview_avatar"
+        app:oval="true" />
+
+    <TextView
+        android:id="@+id/tv_name_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_icon_member"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/todo"
+        android:textSize="@dimen/font_normal_item" />
+
+    <ImageView
+        android:id="@+id/iv_owner_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_icon_member"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/group_ic_group_advocate"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_del_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_icon_member"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/group_chat_ic_delect"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_extra_careful_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_icon_member"
+        android:layout_alignRight="@+id/iv_icon_member"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/group_ic_extra_careful"
+        android:visibility="gone" />
+
+</RelativeLayout>

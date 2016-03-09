@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/measure_result_value_margin"
+            android:background="@drawable/item_bg_blood"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/oxygen_history_trend_margin"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/measure_time"
+                    android:textColor="@color/shadow_dark" />
+
+                <TextView
+                    android:id="@+id/oxygen_history_trend_recent_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_time"
+                    android:layout_marginLeft="@dimen/oxygen_history_trend_margin_left"
+                    android:textColor="@color/shadow_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/measure_result_value_high"
+                android:layout_marginLeft="@dimen/oxygen_history_trend_margin"
+                android:layout_marginRight="@dimen/oxygen_history_trend_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/oxygen_history_trend_flagIV"
+                        android:layout_width="@dimen/history_trend_image_width"
+                        android:layout_height="@dimen/history_trend_image_width"
+                        android:layout_marginLeft="@dimen/oxygen_history_trend_margin"
+                        android:layout_marginRight="@dimen/oxygen_history_trend_margin"
+                        android:src="@drawable/group_chat_testresult" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/oxygen_result_details_view_width"
+                    android:layout_height="@dimen/oxygen_result_details_view_heigh"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/measure_result_value_margin_right"
+                    android:background="@drawable/dottedline" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/measure_result_value_margin_right"
+                    android:layout_weight="1.0"
+                    android:gravity="top|center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/oxygen_history_trend_oxygenTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_value"
+                        android:textColor="@color/font_history_high_priority_value"
+                        android:textSize="@dimen/font_measure_result_value"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_oxygen_unit"
+                        android:textColor="@android:color/black"
+                        android:alpha="@dimen/two_tenth"
+                        android:textSize="@dimen/font_measure_result_util" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_oxygen_saturation"
+                        android:textSize="@dimen/font_measure_result_util_text" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/measure_result_value_margin_right"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/oxygen_history_trend_heartTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_value"
+                        android:textColor="@color/font_history_low_priority_value"
+                        android:textSize="@dimen/font_measure_result_value"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/heart_rate_unit"
+                        android:textColor="@android:color/black"
+                        android:alpha="@dimen/two_tenth"
+                        android:textSize="@dimen/font_measure_result_util" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/heart_rate"
+                        android:textSize="@dimen/font_measure_result_util_text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oxygen_history_trend_month_chart_heigh"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/oxygen_history_trend_oxygen_recent_chart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oxygen_history_trend_heart_recent_chart"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oxygen_history_trend_month_view_heigh"
+            android:layout_margin="@dimen/oxygen_history_trend_margin"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/detectionhistory_ic_normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/oxygen_history_trend_month_text_margin_left"
+                        android:text="@string/nomal"
+                        android:textSize="@dimen/font_measure_result_details_history_trend_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/oxygen_history_trend_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/detectionhistory_ic_abnormal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/oxygen_history_trend_month_text_margin_left"
+                        android:text="@string/exception"
+                        android:textSize="@dimen/font_measure_result_details_history_trend_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/oxygen_history_trend_margin"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/detectionhistory_ic_heart_rate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/oxygen_history_trend_month_text_margin_left"
+                        android:text="@string/heart_rate"
+                        android:textSize="@dimen/font_measure_result_details_history_trend_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/oxygen_history_trend_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_press_history_effect"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/history_trend_list_padding"
+                    android:paddingRight="@dimen/history_trend_list_padding" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/detectionhistory_ic_history_list" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/oxygen_history_trend_month_text_margin_left"
+                        android:text="@string/history_list"
+                        android:textColor="@color/font_recent_history_enter"
+                        android:textSize="@dimen/font_measure_result_details_history_trend_text"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/measure_result_value_margin"
+            android:layout_marginLeft="@dimen/measure_result_value_margin"
+            android:layout_marginRight="@dimen/measure_result_value_margin"
+            android:text="@string/exception_record"
+            android:textSize="@dimen/font_measure_no_data" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/measure_result_value_margin"
+            android:layout_marginLeft="@dimen/measure_result_value_margin"
+            android:layout_marginRight="@dimen/measure_result_value_margin"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_bottom" />
+
+            <com.medzone.cloud.ui.widget.MyListView
+                android:id="@+id/oxygen_history_trend_exception_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" >
+            </com.medzone.cloud.ui.widget.MyListView>
+
+            <TextView
+                android:id="@+id/oxygen_history_trend_exception_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/none_exception_record"
+                android:textSize="@dimen/font_measure_no_data"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_edit_nickname_margin_bottom"
+        android:layout_marginTop="@dimen/group_create_margin_top" >
+
+        <TextView
+            style="@style/RegisterExplainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_edit_nickname_margin_left"
+            android:text="@string/group_create_hint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_top" />
+
+    <com.medzone.cloud.ui.widget.CleanableEditText
+        android:id="@+id/ce_group_name"
+        style="@style/RegisterNormalFontStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_input_height"
+        android:background="@drawable/public_input_box"
+        android:drawableRight="@drawable/common_ic_cancle"
+        android:paddingLeft="@dimen/group_create_success_padding_left"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:imeActionLabel="@string/action_complete"
+        app:maxbytes="@integer/limit_group_name" >
+    </com.medzone.cloud.ui.widget.CleanableEditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_bottom" />
+
+</LinearLayout>

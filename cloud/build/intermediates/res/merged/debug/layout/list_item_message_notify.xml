@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/group_chat_time_margin_bottom"
+        android:layout_marginTop="@dimen/group_chat_time_margin_top"
+        android:background="@drawable/serviceview_bg_time"
+        android:gravity="center"
+        android:text="@string/todo" />
+
+</LinearLayout>

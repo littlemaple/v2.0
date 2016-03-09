@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.medzone.framework.view.RoundedImageView
+            android:id="@+id/pressure_select_item_image"
+            android:layout_width="@dimen/setting_avator_width"
+            android:layout_height="@dimen/setting_avator_height"
+            android:layout_marginBottom="@dimen/pressure_connection_select_item_margin_top"
+            android:layout_marginLeft="@dimen/pressure_connection_select_item_margin_left"
+            android:layout_marginRight="@dimen/pressure_connection_select_item_margin_left"
+            android:layout_marginTop="@dimen/pressure_connection_select_item_margin_top"
+            android:src="@drawable/settingview_avatar"
+            app:oval="true" />
+
+        <TextView
+            android:id="@+id/pressure_select_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

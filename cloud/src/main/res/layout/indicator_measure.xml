@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/indicator_measure_paddingtop" >
+
+    <ImageView
+        android:id="@+id/indicator_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_detection"
+        android:contentDescription="@string/todo"
+        android:gravity="center"
+        android:src="@drawable/settingview_navibar_ic_detect" />
+
+    <TextView
+        android:id="@+id/indicator_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/indicator_imageview"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/indicator_measure"
+        android:textColor="@color/font_recent_history_enter" />
+
+</RelativeLayout>

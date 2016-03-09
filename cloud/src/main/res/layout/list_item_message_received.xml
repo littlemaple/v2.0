@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chatting_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/group_chat_time_margin_bottom"
+        android:layout_marginTop="@dimen/group_chat_time_margin_top"
+        android:background="@drawable/serviceview_bg_time"
+        android:gravity="center"
+        android:text="@string/todo" />
+
+    <RelativeLayout
+        android:id="@+id/chatting_avatar_layout"
+        android:layout_width="@dimen/group_icon_size"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chatting_time_tv" >
+
+        <com.medzone.framework.view.RoundedImageView
+            android:id="@+id/chatting_avatar_iv"
+            android:layout_width="@dimen/group_icon_size"
+            android:layout_height="@dimen/group_icon_size"
+            android:layout_alignParentLeft="true"
+            android:adjustViewBounds="true"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settingview_avatar_small"
+            app:oval="true" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatting_avatar_iv"
+            android:layout_centerHorizontal="true"
+            android:text="@string/todo"
+            android:gravity="center_horizontal"
+            android:textColor="@color/font_record_share"
+            android:textSize="@dimen/font_group_chat_name_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatting_time_tv"
+        android:layout_toRightOf="@+id/chatting_avatar_layout"
+        android:gravity="left" >
+
+        <LinearLayout
+            android:id="@+id/ll_chatting_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatfrom_bg"
+            android:gravity="left"
+            android:minHeight="@dimen/group_chat_item_minheight"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/chatting_content_itv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

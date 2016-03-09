@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout01"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/title_bg" >
+
+    <ImageButton
+        android:id="@+id/actionbar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/actionbar_margin_horizontal"
+        android:background="@drawable/selector_press_effect"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/actionbar_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/detectionhistory_switch_recent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/actionbar_title_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingTop="2dip"
+            android:textColor="@color/font_measure_title_lightblue"
+            android:textSize="@dimen/font_action_title_size" />
+
+        <TextView
+            android:id="@+id/actionbar_title_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingTop="2dip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_action_title_size" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/actionbar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/actionbar_margin_horizontal"
+        android:background="@drawable/selector_press_effect"
+        android:clickable="true" />
+
+</FrameLayout>

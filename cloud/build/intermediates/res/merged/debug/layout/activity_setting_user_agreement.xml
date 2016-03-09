@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="@dimen/setting_about_margin_left"
+    android:paddingRight="@dimen/setting_about_margin_right"
+    android:paddingTop="@dimen/setting_about_agreement_margin_top" >
+
+    <WebView
+        android:id="@+id/agreement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+</RelativeLayout>

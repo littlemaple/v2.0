@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_press_white_effect"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/item_input_height"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/service_clock_repeatition_margin_horizal"
+    android:paddingRight="@dimen/service_clock_repeatition_margin_horizal" >
+
+    <TextView
+        android:id="@+id/tv_alarm_week"
+        style="@style/ClockNormalStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|left"
+        android:text="@string/todo" />
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="@dimen/divider_height"
+        android:layout_weight="1" />
+
+    <CheckBox
+        android:id="@+id/cb_repeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_checkbox"
+        android:button="@null"
+        android:clickable="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false" />
+
+</LinearLayout>

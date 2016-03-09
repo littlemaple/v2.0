@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/pressure_measure_margin_top"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="@dimen/pressure_measure_view_width"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_bottom" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/pressure_measure_change_title_interval"
+                android:layout_marginRight="@dimen/pressure_measure_change_title_interval"
+                android:text="@string/pressure_measure_static_value"
+                android:textColor="@color/font_bp_measure_explain"
+                android:textSize="@dimen/font_pressure_measure_change_title" />
+
+            <View
+                android:layout_width="@dimen/pressure_measure_view_width"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_bottom" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pressure_measure_changeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/pressure_measure_margin_interval"
+            android:layout_marginTop="@dimen/pressure_measure_margin_interval"
+            android:text="@string/static_no_value"
+            android:textColor="@color/font_bp_measure_value"
+            android:textSize="@dimen/font_pressure_measure_change_value"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_pressure_meassure_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="@dimen/two_tenth"
+            android:text="@string/pressure_unit_mmhg"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font_pressure_measure_change_unit" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginBottom="@dimen/pressure_measure_view_margin_bottom"
+        android:layout_marginTop="@dimen/pressure_measure_view_margin_top"
+        android:background="@color/divider_bottom" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerInside"
+            android:src="@drawable/guide_pic_body" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/pressure_measure_heart_margin_right"
+            android:layout_marginTop="@dimen/pressure_measure_heart_margin_top" >
+
+            <ImageView
+                android:id="@+id/pressure_measure_big_heart_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha="@dimen/three_tenth"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide_pic_heart_light_large" />
+
+            <ImageView
+                android:id="@+id/pressure_measure_while_heart_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha="@dimen/eight_tenth"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide_pic_heart_light_small" />
+
+            <ImageView
+                android:id="@+id/pressure_measure_red_heart_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/guide_pic_heart" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

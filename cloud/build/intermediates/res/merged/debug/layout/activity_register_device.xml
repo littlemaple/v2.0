@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_input_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/rigister_device_padding_left"
+        android:text="@string/register_explain_choose_device"
+        android:textSize="@dimen/font_normal_item" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:alpha="@dimen/two_tenth"
+        android:background="@color/divider_mid" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/register_device_height"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_device_layout_padding_bottom"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/register_device_layout_padding_left" >
+
+            <CheckBox
+                android:id="@+id/checkbox_device_bloodpressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/register_device_layout_margin_right"
+                android:background="@drawable/selector_device_bloodpressure"
+                android:button="@null"
+                android:checked="true" >
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_device_bloodoxygen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/register_device_layout_margin_right"
+                android:background="@drawable/selector_device_oxygen"
+                android:button="@null"
+                android:checked="true" >
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_device_eartemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_device_earthermometer"
+                android:button="@null"
+                android:checked="true" >
+            </CheckBox>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/register_device_layout_padding_left" >
+
+            <CheckBox
+                android:id="@+id/checkbox_device_fetal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/register_device_layout_margin_right"
+                android:background="@drawable/selector_device_fetal"
+                android:button="@null"
+                android:checked="false"
+                android:visibility="gone" >
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/checkbox_device_bloodsugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_device_bloodsugar"
+                android:button="@null"
+                android:checked="false"
+                android:visibility="gone" >
+            </CheckBox>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:alpha="0.2"
+        android:background="@color/divider_mid" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_input_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/rigister_device_padding_left"
+        android:text="@string/register_explain_choose_device_warn"
+        android:textColor="@color/font_text_explain"
+        android:textSize="@dimen/font_small_item" />
+
+    <Button
+        android:id="@+id/btn_complete"
+        style="@style/ConfirmButtonDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_button_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/register_device_margin_left"
+        android:layout_marginRight="@dimen/register_device_margin_right"
+        android:layout_marginTop="@dimen/register_device_confirm_margin_top"
+        android:text="@string/action_complete" />
+
+</LinearLayout>

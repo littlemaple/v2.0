@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pressure_history_trend_high"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pressure_history_trend_child_high"
+            android:layout_marginLeft="@dimen/pressure_history_list_margin"
+            android:layout_marginRight="@dimen/pressure_history_list_margin"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/oxygen_history_list_padding" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/pressure_history_list_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                             android:textColor="@color/font_history_high_priority_value"
+                            android:textSize="@dimen/font_pressure_history_list_biggest" >
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:gravity="center_vertical"
+                            android:text="@string/month"
+                            android:textColor="@color/font_history_high_priority_value"
+                            android:textSize="@dimen/font_pressure_history_list_biggest" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/detailsoftheresultsview_ic_time" />
+
+                        <TextView
+                            android:id="@+id/pressure_history_list_month_start"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/oxygen_history_list_margin_left"
+                            android:gravity="center_vertical|center_horizontal"
+                             android:textColor="@color/shadow_dark"
+                            android:textSize="@dimen/font_pressure_history_list_small" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/interval"
+                            android:textColor="@color/shadow_dark"
+                            android:textSize="@dimen/font_pressure_history_list_small" />
+
+                        <TextView
+                            android:id="@+id/pressure_history_list_month_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                             android:textColor="@color/shadow_dark"
+                            android:textSize="@dimen/font_pressure_history_list_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/pressure_history_list_sum_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                 android:textColor="@color/font_history_high_priority_value"
+                                android:textSize="@dimen/font_pressure_history_list_biggest" >
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="@dimen/oxygen_history_list_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/times_unit"
+                                android:textColor="@color/shadow_dark"
+                                android:textSize="@dimen/font_pressure_history_list_small" >
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:background="@color/divider_bottom" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/measure_times"
+                            android:textColor="@color/shadow_dark"
+                            android:textSize="@dimen/font_pressure_history_list_small" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pressure_history_list_margin_left"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/pressure_history_list_error_times"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                 android:textColor="@color/font_abnormal_red"
+                                android:textSize="@dimen/font_pressure_history_list_biggest" >
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_marginLeft="@dimen/oxygen_history_list_margin_left"
+                                android:gravity="center_vertical"
+                                android:text="@string/times_unit"
+                                android:textColor="@color/shadow_dark"
+                                android:textSize="@dimen/font_pressure_history_list_small" >
+                            </TextView>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/divider_height"
+                            android:background="@color/divider_bottom" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="@string/error_times"
+                            android:textColor="@color/shadow_dark"
+                            android:textSize="@dimen/font_pressure_history_list_small" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/pressure_history_list_orientation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" >
+                    </ImageView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/divider_bottom" />
+    </LinearLayout>
+
+</LinearLayout>

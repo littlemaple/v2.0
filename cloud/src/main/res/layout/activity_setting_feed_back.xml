@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightgrey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_edit_nickname_margin_bottom"
+        android:layout_marginTop="@dimen/setting_edit_nickname_margin_top" >
+
+        <TextView
+            style="@style/SettingExplainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_edit_nickname_margin_left"
+            android:text="@string/please_description_quesion" />
+
+        <TextView
+            android:id="@+id/tv_character_limit"
+            style="@style/RegisterExplainTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/setting_edit_nickname_margin_right"
+            android:gravity="right"
+            android:text="@string/setting_nickname_character_limit"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_top" />
+
+    <com.medzone.cloud.ui.widget.CleanableEditText
+        android:id="@+id/ce_feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/public_input_box"
+        android:drawableRight="@drawable/common_ic_cancle"
+        android:gravity="left|top"
+        android:inputType="textMultiLine"
+        android:maxLines="@integer/limit_feedback_lines"
+        android:minLines="@integer/limit_feedback_lines"
+        android:paddingLeft="@dimen/setting_edit_nickname_padding_left"
+        app:maxlinescontent="@integer/limit_feedback_lines" >
+    </com.medzone.cloud.ui.widget.CleanableEditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_bottom" />
+
+</LinearLayout>

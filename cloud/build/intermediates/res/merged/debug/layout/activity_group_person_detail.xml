@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/group_member_detail_top_line_height"
+            android:layout_marginLeft="@dimen/group_member_detail_top_line_left"
+            android:layout_marginRight="@dimen/group_member_detail_top_line_right"
+            android:background="@android:color/white"
+            android:gravity="center_vertical" >
+
+            <com.medzone.framework.view.RoundedImageView
+                android:id="@+id/tv_group_member_icon"
+                android:layout_width="@dimen/group_member_icon_width"
+                android:layout_height="@dimen/group_member_icon_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/settingview_avatar"
+                app:oval="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/group_member_detail_text_spacing_small"
+                android:layout_toRightOf="@+id/tv_group_member_icon"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/remark_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.4"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:maxLength="@integer/limit_remark"
+                        android:text="@string/group_remark:"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_view_person_datum_remark" />
+
+                    <com.medzone.cloud.ui.widget.CleanableEditText
+                        android:id="@+id/tv_group_member_mark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableRight="@drawable/group_personal_data_ic_modification"
+                        android:ems="16"
+                        android:hint="@string/group_hint_remark_unset"
+                        android:imeOptions="actionGo"
+                        android:inputType="text"
+                        android:textColor="@color/four_alpha_black"
+                        android:textColorHint="@color/four_alpha_black"
+                        android:textSize="@dimen/font_view_person_datum_remark"
+                        app:clickright="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.4"
+                        android:text="@string/nickname:"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/font_view_person_datum_name" />
+
+                    <TextView
+                        android:id="@+id/tv_group_member_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha="0.4"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+                 <ImageButton
+                android:id="@+id/iv_remark_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/group_member_detail_btn_edit_margin_top"
+                android:background="@null"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/group_personal_data_ic_modification" />
+            -->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_top" >
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/group_member_detail_item_input_height_small"
+                android:layout_marginLeft="@dimen/group_member_detail_margin_horizal"
+                android:layout_marginRight="@dimen/group_member_detail_margin_horizal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/SettingKeyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/age" />
+
+                <TextView
+                    android:id="@+id/tv_group_member_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/group_member_detail_text_spacing_large"
+                    android:gravity="center_vertical"
+                    android:text="@string/todo"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_group_detail_age_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/group_member_detail_text_spacing_large"
+                    android:gravity="center_vertical"
+                    android:text="@string/age_unit"
+                    android:textColor="@color/font_text_gray"
+                    android:textSize="@dimen/font_group_detail_age_size" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_height"
+                android:background="@color/divider_bottom" >
+            </View>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/group_member_detail_item_input_height_large"
+            android:layout_marginLeft="@dimen/group_member_detail_margin_horizal"
+            android:layout_marginRight="@dimen/group_member_detail_margin_horizal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/SettingKeyStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_careful" />
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" >
+            </View>
+
+            <CheckBox
+                android:id="@+id/tBtnExtraCare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_switch"
+                android:button="@null"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/divider_dark"
+            android:visibility="gone" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/ll_help_measure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/group_member_detail_item_input_height_large"
+            android:layout_marginLeft="@dimen/group_member_detail_margin_horizal"
+            android:layout_marginRight="@dimen/group_member_detail_margin_horizal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/SettingKeyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/istest" />
+
+                <TextView
+                    style="@style/GroupDatumDescriptionTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test_for_description"
+                    android:textColor="@color/font_text_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" >
+            </View>
+
+            <CheckBox
+                android:id="@+id/tBtnIsTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_switch"
+                android:button="@null"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/divider_dark"
+            android:visibility="gone" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/ll_view_history"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/group_member_detail_item_input_height_large"
+            android:layout_marginLeft="@dimen/group_member_detail_margin_horizal"
+            android:layout_marginRight="@dimen/group_member_detail_margin_horizal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/SettingKeyStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/isview" />
+
+                <TextView
+                    style="@style/GroupDatumDescriptionTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_for_description"
+                    android:textColor="@color/font_text_gray" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="1dip"
+                android:layout_weight="1" >
+            </View>
+
+            <CheckBox
+                android:id="@+id/tBtnIsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_switch"
+                android:button="@null"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/divider_dark" >
+        </View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E7E6E6"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/group_member_detail_margin_horizal"
+        android:paddingRight="@dimen/group_member_detail_margin_horizal" >
+
+        <Button
+            android:id="@+id/btn_health_centre"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_button_height"
+            android:layout_marginTop="@dimen/group_member_detail_btn_margin_top"
+            android:background="@drawable/selector_button_group_orange"
+            android:text="@string/enter_health_centre"
+            android:textColor="@drawable/selector_button_textcolor" />
+
+        <Button
+            android:id="@+id/btn_test"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_button_height"
+            android:layout_marginTop="@dimen/group_member_detail_two_btn_spacing"
+            android:background="@drawable/selector_button_group_white"
+            android:text="@string/test_for" />
+    </LinearLayout>
+
+</LinearLayout>

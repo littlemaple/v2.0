@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/group_chat_time_margin_bottom"
+        android:layout_marginTop="@dimen/group_chat_time_margin_top"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/chatting_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/serviceview_bg_time"
+            android:gravity="center"
+            android:text="@string/todo" />
+    </RelativeLayout>
+
+    <com.medzone.framework.view.RoundedImageView
+        android:id="@+id/chatting_avatar_iv"
+        android:layout_width="@dimen/group_icon_size"
+        android:layout_height="@dimen/group_icon_size"
+        android:adjustViewBounds="true"
+        android:focusable="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/settingview_avatar_small"
+        android:visibility="gone"
+        app:oval="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_chatting_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/public_btn_normal"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/chatting_content_itv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx" />
+    </LinearLayout>
+
+</LinearLayout>

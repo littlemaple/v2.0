@@ -1,0 +1,175 @@
+[
+    {
+        "outputFile": "D:\\app\\cloudFramework\\build\\intermediates\\res\\merged\\release\\values-v11\\values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 397
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 397
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 402,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 756
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 402,
+                        "endLine": 13,
+                        "endColumn": 12,
+                        "endOffset": 756
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 761,
+                    "endLine": 21,
+                    "endColumn": 12,
+                    "endOffset": 1168
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 761,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 1168
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1173,
+                    "endLine": 29,
+                    "endColumn": 12,
+                    "endOffset": 1591
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1173,
+                        "endLine": 29,
+                        "endColumn": 12,
+                        "endOffset": 1591
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1596,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 1934
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 1596,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 1934
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 1939,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 2289
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\app\\cloudNumberPickerBackPort\\unspecified\\res\\values-v11\\values-v11.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 1939,
+                        "endLine": 41,
+                        "endColumn": 12,
+                        "endOffset": 2289
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2294,
+                    "endLine": 45,
+                    "endColumn": 12,
+                    "endOffset": 2479
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 362
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 2484,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 2681
+                },
+                "from": {
+                    "file": "D:\\app\\cloudFramework\\build\\intermediates\\exploded-aar\\com.actionbarsherlock\\actionbarsherlock\\4.4.0\\res\\values-v11\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 368,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 565
+                    }
+                }
+            }
+        ]
+    }
+]

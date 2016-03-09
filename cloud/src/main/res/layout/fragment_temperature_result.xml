@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.medzone.cloud.ui.widget.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.medzone.mcloud"
+    android:id="@+id/et_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/measure_result_margin_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/et_result_flag_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:src="@drawable/testresultsview_testresult_graph_normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_marginTop="@dimen/et_measure_result_margin_top"
+            android:background="@color/divider_bottom" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/measure_result_value_high"
+            android:layout_margin="@dimen/measure_result_value_margin"
+            android:background="@drawable/item_bg_blood"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/et_result_temperatureTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/font_history_high_priority_value"
+                    android:textSize="@dimen/font_audio_measure_result_vlaue"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/et_measure_result_util_high"
+                    android:layout_height="@dimen/et_measure_result_util_high"
+                    android:layout_marginLeft="@dimen/et_measure_result_margin_left"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:gravity="top|right"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="@dimen/two_tenth"
+                            android:text="@string/ear_temperature_unit_before"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_audio_measure_result_util_o" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="20"
+                        android:gravity="bottom|left"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:alpha="@dimen/two_tenth"
+                            android:text="@string/ear_temperature_unit_after"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/font_audio_measure_result_util_C" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/measure_result_note_high"
+            android:layout_marginLeft="@dimen/measure_result_value_margin"
+            android:layout_marginRight="@dimen/measure_result_value_margin"
+            android:background="@drawable/item_readme_bg" >
+
+            <com.medzone.cloud.ui.widget.CleanableEditText
+                android:id="@+id/ce_et_result_readme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/oxygen_result_details_readme_margin"
+                android:background="@drawable/item_et_bg"
+                android:hint="@string/add_note"
+                android:maxLines="1"
+                android:padding="@dimen/oxygen_result_details_readme_padding"
+                android:singleLine="true"
+                android:textSize="@dimen/font_pressure_measure_change_unit"
+                app:maxbytes="@integer/limit_measure_readme" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom" >
+
+        <include
+            android:layout_width="match_parent"
+            layout="@layout/measure_bottom_layout" />
+    </LinearLayout>
+
+</com.medzone.cloud.ui.widget.CustomLinearLayout>

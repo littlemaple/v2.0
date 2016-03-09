@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_lightgrey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setting_edit_nickname_margin_bottom"
+        android:layout_marginTop="@dimen/setting_edit_nickname_margin_top" >
+
+        <TextView
+            android:id="@+id/setting_update_tied_info_hint"
+            style="@style/RegisterExplainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/setting_edit_nickname_margin_left" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_top" />
+
+    <com.medzone.cloud.ui.widget.CleanableEditText
+        android:id="@+id/ce_setting_update_tied_info_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_input_height"
+        android:background="@drawable/public_input_box"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        android:imeActionLabel="@string/action_complete"
+        android:drawableRight="@drawable/common_ic_cancle"
+        android:paddingLeft="@dimen/setting_edit_nickname_padding_left" >
+    </com.medzone.cloud.ui.widget.CleanableEditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider_bottom" />
+
+</LinearLayout>
